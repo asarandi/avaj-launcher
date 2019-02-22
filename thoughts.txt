@@ -1,0 +1,2 @@
+http://blackwasp.co.uk/gofpatterns.aspx
+https://www.tutorialspoint.com/design_pattern/index.htm
