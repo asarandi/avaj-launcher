@@ -1,4 +1,4 @@
-package com._42;
+package avaj.launcher;
 
 public class Coordinates {
     private int longitude;
@@ -15,20 +15,20 @@ public class Coordinates {
         return longitude;
     }
 
-    public int getLatitude() {
-        return latitude;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
     public void setLongitude(int longitude) {
         this.longitude = longitude;
     }
 
+    public int getLatitude() {
+        return latitude;
+    }
+
     public void setLatitude(int latitude) {
         this.latitude = latitude;
+    }
+
+    public int getHeight() {
+        return height;
     }
 
     public void setHeight(int height) {

@@ -1,7 +1,10 @@
-package com._42;
+package avaj.launcher;
 
 import java.io.IOException;
-import java.util.logging.*;
+import java.util.logging.FileHandler;
+import java.util.logging.Formatter;
+import java.util.logging.LogRecord;
+import java.util.logging.Logger;
 
 
 public class AvajLogger {
@@ -13,7 +16,7 @@ public class AvajLogger {
         FileHandler fh = null;
 
         try {
-            fh = new FileHandler("avaj_sim.txt");
+            fh = new FileHandler("simulation.txt");
         } catch (IOException e) {
             System.out.println("error: could not open simulation log file");
             System.exit(1);
@@ -29,14 +32,14 @@ public class AvajLogger {
         logger.setUseParentHandlers(false);
     }
 
-    private static AvajLogger getLogger(){
+    private static AvajLogger getLogger() {
         if (avajLogger == null) {
             avajLogger = new AvajLogger();
         }
         return avajLogger;
     }
 
-    public static void put(String s){
+    public static void put(String s) {
         getLogger().logger.info(s);
     }
 

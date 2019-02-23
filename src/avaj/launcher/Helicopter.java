@@ -1,21 +1,20 @@
-package com._42;
+package avaj.launcher;
 
-public class Jetplane extends Aircraft implements Flyable{
+public class Helicopter extends Aircraft implements Flyable {
     private WeatherTower weatherTower;
-    private String ft = "Jetplane";
+    private String ft = "Helicopter";
 
-    Jetplane(String name, Coordinates coordinates){
+    Helicopter(String name, Coordinates coordinates) {
         super(name, coordinates);
     }
 
-    public void registerTower(WeatherTower weatherTower){
+    public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
         weatherTower.register(this);
     }
 
     public void updateConditions() {
         String w = weatherTower.getWeather(this.coordinates);
-        //System.out.printf("%s: %s %s\n", this, Lookups.getMessage(ft, w), this.coordinates);
         AvajLogger.put(String.format("%s: %s %s\n", this, Lookups.getMessage(ft, w), this.coordinates));
 
         int lon = this.coordinates.getLongitude() + Lookups.getLongitude(ft, w);
@@ -24,7 +23,6 @@ public class Jetplane extends Aircraft implements Flyable{
         hgt = (hgt > 100) ? 100 : hgt;
 
         if (hgt <= 0) {
-            //System.out.printf("%s landing.\n", this);
             AvajLogger.put(String.format("%s landing.\n", this));
             weatherTower.unregister(this);
         }
@@ -36,6 +34,6 @@ public class Jetplane extends Aircraft implements Flyable{
 
     @Override
     public String toString() {
-        return ft + "#" +  name + '(' + id + ')';
+        return ft + "#" + name + '(' + id + ')';
     }
 }

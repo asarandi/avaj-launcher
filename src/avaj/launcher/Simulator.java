@@ -1,11 +1,20 @@
-package com._42;
+package avaj.launcher;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.regex.Pattern;
+
+class InvalidNumSimulationsException extends Exception {
+
+    public InvalidNumSimulationsException() {
+    }
+
+    public InvalidNumSimulationsException(String e) {
+        super(e);
+    }
+}
 
 public class Simulator {
 
@@ -14,7 +23,7 @@ public class Simulator {
         int numSimulations = -1;
         boolean isValid = false;
         String s;
-        String split[];
+        String[] split;
         WeatherTower wt;
         List<Flyable> fleet = new ArrayList<>();
 
@@ -35,22 +44,24 @@ public class Simulator {
             if (s.matches("^\\d+$")) {
                 try {
                     numSimulations = Integer.parseInt(s);
-                    isValid = true;
-                } catch (Exception e) {
-                    System.out.println("error: number of simulations - int out of range");
-                }    //num too big or too small
+                    if (numSimulations <= 0) {
+                        throw new InvalidNumSimulationsException("number of simulations must be greater than 0");
+                    } else {
+                        isValid = true;
+                    }
+                } catch (InvalidNumSimulationsException e) {
+                    System.out.println(e);
+                } catch (NumberFormatException e) {
+                    System.out.println("error: invalid number of simulations - int out of range");
+                }
             } else {
                 System.out.println("error: first line of input should be number of simulations");
-            }
-            if (isValid && numSimulations <= 0){
-                System.out.println("error: number of simulations - must be greater than 0");
-                isValid = false;
             }
         }
 
         while (isValid && in.hasNext()) {
             s = in.nextLine();
-            if (s.matches("^\\w+\\s+\\w+\\s+\\d+\\s+\\d+\\s+\\d+$")){
+            if (s.matches("^\\w+\\s+\\w+\\s+\\d+\\s+\\d+\\s+\\d+$")) {
                 split = s.split("\\s+");
                 try {
                     fleet.add(
@@ -63,16 +74,17 @@ public class Simulator {
                             )
                     );
                 } catch (InvalidAircraftTypeException e) {
-                    System.out.println("parse error: invalid aircraft type: " + s);
+                    System.out.println("line: " + s);
+                    System.out.println("error: " + e);
                     isValid = false;
                     break;
-                } catch (Exception e) {
-                    System.out.println("parse error: " + s);    //ints might be out of range
+                } catch (NumberFormatException e) {
+                    System.out.println("number format exception: " + s);
                     isValid = false;
                     break;
                 }
             } else {
-                System.out.println("parse error: " + s);    //string doesn't match pattern
+                System.out.println("parse error: " + s);
                 isValid = false;
                 break;
             }
@@ -88,9 +100,9 @@ public class Simulator {
             f.registerTower(wt);
         }
 
-        for (int i=0;i<numSimulations;i++){
+        for (int i = 0; i < numSimulations; i++) {
             wt.changeWeather();
         }
-        
+
     }
 }
