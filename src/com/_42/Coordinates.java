@@ -35,4 +35,12 @@ public class Coordinates {
         this.height = height;
     }
 
+    @Override
+    public String toString() {
+        return "[" +
+                "lon:" + longitude +
+                ", lat:" + latitude +
+                ", hgt:" + height +
+                ']';
+    }
 }

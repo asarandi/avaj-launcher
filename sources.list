@@ -9,4 +9,4 @@
 ./src/com/_42/Jetplane.java
 ./src/com/_42/AircraftFactory.java
 ./src/com/_42/WeatherProvider.java
-./src/com/_42/Main.java
+./src/com/_42/Simulator.java

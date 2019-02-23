@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-java -classpath src/ com._42.Main scenario.txt
+java -classpath src/ com._42.Simulator scenario.txt
