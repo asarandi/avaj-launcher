@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f45612b5-4cd4-4455-b533-4eb39c54c8c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenario.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scenario.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources.list" beforeDir="false" afterPath="$PROJECT_DIR$/sources.list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/_42/AircraftFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/_42/AircraftFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/_42/Balloon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/_42/Balloon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/_42/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/_42/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/_42/Helicopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/_42/Helicopter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/_42/Jetplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/_42/Jetplane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/_42/Lookups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/_42/Lookups.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/_42/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/_42/Simulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/_42/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/_42/Tower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/_42/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/_42/Simulator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/_42/Simulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+            <state relative-caret-position="585">
+              <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/_42/AircraftFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#171#172#0" expanded="true" />
                 <element signature="e#197#198#0" expanded="true" />
@@ -108,16 +98,16 @@
         <entry file="file://$PROJECT_DIR$/src/com/_42/Jetplane.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="17" column="92" lean-forward="true" selection-start-line="17" selection-end-line="17" selection-end-column="92" />
+              <caret line="17" column="92" selection-start-line="17" selection-end-line="17" selection-end-column="92" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/_42/Balloon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="92" selection-start-line="15" selection-start-column="92" selection-end-line="15" selection-end-column="92" />
+            <state relative-caret-position="495">
+              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
               <folding>
                 <element signature="e#1220#1221#0" expanded="true" />
               </folding>
@@ -169,11 +159,11 @@
         <option value="$PROJECT_DIR$/src/com/_42/Tower.java" />
         <option value="$PROJECT_DIR$/src/com/_42/Lookups.java" />
         <option value="$PROJECT_DIR$/src/com/_42/AircraftFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/_42/Simulator.java" />
         <option value="$PROJECT_DIR$/src/com/_42/Jetplane.java" />
         <option value="$PROJECT_DIR$/src/com/_42/Coordinates.java" />
         <option value="$PROJECT_DIR$/src/com/_42/Helicopter.java" />
         <option value="$PROJECT_DIR$/src/com/_42/Balloon.java" />
+        <option value="$PROJECT_DIR$/src/com/_42/Simulator.java" />
       </list>
     </option>
   </component>
@@ -225,7 +215,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550910297386" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550911672326" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -291,14 +281,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925764" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38777292" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38777292" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50083333" side_tool="true" weight="0.32890365" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32925764" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32838428" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -392,20 +382,10 @@
     <entry file="file://$PROJECT_DIR$/src/com/_42/AircraftFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#171#172#0" expanded="true" />
             <element signature="e#197#198#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/_42/Simulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -428,7 +408,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/_42/Jetplane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="17" column="92" lean-forward="true" selection-start-line="17" selection-end-line="17" selection-end-column="92" />
+          <caret line="17" column="92" selection-start-line="17" selection-end-line="17" selection-end-column="92" />
         </state>
       </provider>
     </entry>
@@ -441,10 +421,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/_42/Balloon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="92" selection-start-line="15" selection-start-column="92" selection-end-line="15" selection-end-column="92" />
+        <state relative-caret-position="495">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding>
             <element signature="e#1220#1221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/_42/Simulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

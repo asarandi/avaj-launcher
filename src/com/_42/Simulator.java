@@ -64,6 +64,8 @@ public class Simulator {
                     );
                 } catch (InvalidAircraftTypeException e) {
                     System.out.println("parse error: invalid aircraft type: " + s);
+                    isValid = false;
+                    break;
                 } catch (Exception e) {
                     System.out.println("parse error: " + s);    //ints might be out of range
                     isValid = false;
