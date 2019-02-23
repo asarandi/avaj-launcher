@@ -16,8 +16,15 @@ abstract class Tower {
     }
 
     protected void conditionsChanged(){
-        for (int i=observers.size()-1; i>=0;i--) {
-            observers[i].updateConditions();
+
+        for (Flyable f : observers) {
+            Flyable banana = f;
+            banana.updateConditions();
         }
+
+//        for (int i=0; i<observers.size(); i++) {
+//            Flyable f = observers.get(i);
+//            f.updateConditions();
+//        }
     }
 }

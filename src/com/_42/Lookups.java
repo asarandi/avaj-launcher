@@ -9,21 +9,21 @@ public class Lookups {
     private static String[][] msg = {
             {
                     "jetplane sun msg",
-                    "jetplane rain msg",
+                    "It's raining. Better watch out for lightings.",
                     "jetplane fog msg",
-                    "jetplane snow msg"
+                    "OMG! Winter is coming!"
             },
             {
-                    "heli sun msg",
+                    "This is hot.",
                     "heli rain msg",
                     "heli fog msg",
-                    "heli snow msg"
+                    "My rotor is going to freeze!"
             },
             {
-                    "balloon sun msg",
-                    "balloon rain msg",
+                    "Let's enjoy the good weather and take some pics.",
+                    "Damn you rain! You messed up my baloon.",
                     "balloon fog msg",
-                    "balloon snow msg"
+                    "It's snowing. We're gonna crash."
             }
     };
 
@@ -47,7 +47,7 @@ public class Lookups {
                     {2,0,4},    //sun
                     {0,0,-5},   //rain
                     {0,0,-3},   //fog
-                    {0,0,15}    //snow
+                    {0,0,-15}    //snow
             }
     };
 
