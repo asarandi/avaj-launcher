@@ -1,1 +1,11 @@
+./src/com/_42/Coordinates.java
+./src/com/_42/Helicopter.java
+./src/com/_42/Tower.java
+./src/com/_42/Aircraft.java
+./src/com/_42/WeatherTower.java
+./src/com/_42/Balloon.java
+./src/com/_42/Flyable.java
+./src/com/_42/Jetplane.java
+./src/com/_42/AircraftFactory.java
+./src/com/_42/WeatherProvider.java
 ./src/com/_42/Main.java

@@ -1,10 +1,11 @@
 package com._42;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 abstract class Tower {
-    private List <Flyable> observers = new ArrayList<Flyable>();
+    private ArrayList <Flyable> observers = new ArrayList<Flyable>();
 
     public void register(Flyable f){
         observers.add(f);
@@ -15,8 +16,8 @@ abstract class Tower {
     }
 
     protected void conditionsChanged(){
-        for (Flyable f : observers) {
-            f.updateConditions();
+        for (int i=observers.size()-1; i>=0;i--) {
+            observers[i].updateConditions();
         }
     }
 }
