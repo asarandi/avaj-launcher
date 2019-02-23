@@ -23,4 +23,9 @@ public class Jetplane extends Aircraft implements Flyable{
         String w = weatherTower.getWeather(this.coordinates);
         System.out.printf("JetPlane#%s(%d): %s\n", this.name, this.id, msg.get(w));
     }
+
+    @Override
+    public String toString() {
+        return "JetPlane#" +  name + '(' + id + ')';
+    }
 }

@@ -12,8 +12,8 @@ public class Helicopter extends Aircraft implements Flyable{
 
     public void registerTower(WeatherTower weatherTower){
         weatherTower.register(this);
-
     }
+
     public void updateConditions() {
         Map<String, String> msg = new HashMap<>();
         msg.put("RAIN", "heli rain message");
@@ -23,4 +23,10 @@ public class Helicopter extends Aircraft implements Flyable{
         String w = weatherTower.getWeather(this.coordinates);
         System.out.printf("Helicopter#%s(%d): %s\n", this.name, this.id, msg.get(w));
     }
+
+    @Override
+    public String toString() {
+        return "Helicopter#" +  name + '(' + id + ')';
+    }
+
 }

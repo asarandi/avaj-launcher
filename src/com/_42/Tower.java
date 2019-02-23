@@ -6,12 +6,12 @@ import java.util.List;
 abstract class Tower {
     private List <Flyable> observers = new ArrayList<Flyable>();
 
-    public void register(Flyable flyable){
-        observers.add(flyable);
+    public void register(Flyable f){
+        observers.add(f);
     }
 
-    public void unregister(Flyable flyable){
-        observers.remove(flyable);
+    public void unregister(Flyable f){
+        observers.remove(f);
     }
 
     protected void conditionsChanged(){

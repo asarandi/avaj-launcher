@@ -4,7 +4,7 @@ abstract class Aircraft {
     protected long id;
     protected String name;
     protected Coordinates coordinates;
-    private long idCounter;
+    private static long idCounter;
 
     Aircraft(String name, Coordinates coordinates){
         this.name = name;
